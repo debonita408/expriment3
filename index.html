@@ -1,0 +1,26 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=<device-width>, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <h2>DOM Manipulation</h2>
+    <h2 id="heading">Old heading</h2>
+    <h2 id="heading">Hello Students</h2>
+    <p id="demo">welcome to javascript</p>
+    <button on click="changeStyle()">Change Style</button>
+    <button onclick="changeContent()">ChangeContent</button>
+    <button onclick="changeText()">change heading</button>
+    <script>
+        function changeContent(){
+            document.getElementById("demo").innerHTML="Welcome to DOM Manipulation!";
+
+        }
+        function changeText(){
+            document.getElementById("heading").textContent="New Heading";
+        }
+    </script>
+</body>
+</html>
